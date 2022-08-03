@@ -1,0 +1,1252 @@
+/* 
+=====================================================================
+Template Name: Appnur - Responsive HTML5 App Landing Page.
+Author: Envatoprime
+Author Email: envatoprime@gmail.com
+Version: 1.00
+======================================================================
+
+--------------------
+Table of Content
+--------------------
+
+1. Common CSS Start
+2. Main Menu CSS Start
+3. Home secion css start
+4. Sarvice Section css Start
+5. Features Section css Start
+6. Video Section css Start
+7. ScreenShort Section css Start
+8. Pricing Section css Start
+9. Clint Review Section css Start
+10. Download Section css Start
+11. FAQ Section css Start
+12. Contact Section css Start
+13. Go-top css Start
+14. preloader part css start
+
+===================================================================*/
+
+
+
+/* ======================================
+1. Common CSS Start
+========================================= */
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.btn,
+.btn:focus,
+button,
+button:focus {
+	outline: none !important;
+}
+
+a {
+	text-decoration: none !important;
+	outline: none;
+}
+
+
+.height-100 {
+	height: 100vh;
+	position: relative;
+}
+
+.btn {
+	padding: 14px 24px;
+	font-size: 15px;
+	font-weight: 600;
+	transition: all 0.5s;
+	letter-spacing: 0.6px;
+	color: #fff;
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+.btn-round {
+	border-radius: 30px;
+}
+
+.btn-outline-custom {
+	border: 2px solid #fff;
+	border-color: #fff;
+	background: linear-gradient(to right, #fff, #fff) no-repeat;
+	background-size: 0% 100%;
+}
+
+.text-custom,
+.btn-custom,
+.video-play-icon {
+	color: #10c469;
+}
+
+.btn-custom {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 0% 100%;
+	border: 2px solid #10c469;
+	border-color: #10c469;
+
+}
+
+.form-custom .form-control:focus,
+.btn-custom {
+	border-color: #10c469;
+}
+
+.btn-custom:hover {
+	border-color: #10c469;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-custom:focus,
+.btn-outline-custom:active,
+.btn-outline-custom.active,
+.btn-outline-custom.focus,
+.btn-outline-custom:active,
+.btn-outline-custom:focus,
+.btn-outline-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+	color: #000;
+	background-size: 100% 100%;
+}
+
+.btn-custom {
+	border: 2px solid;
+	cursor: pointer;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+	color: #f3f3f3;
+	background-size: 100% 100%;
+}
+
+.bg-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+}
+
+
+/*==========================================
+ 2. Main Menu CSS Start
+===========================================*/
+
+.navbar-custom {
+	position: absolute;
+	z-index: 9998;
+	width: 100%;
+	height: auto;
+	min-height: 0;
+	border: 0;
+	margin-bottom: 0;
+	padding: 25px 0px;
+	-webkit-backface-visibility: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+.navbar-custom-header {
+	width: 100%;
+}
+
+.nav-position {
+	position: relative;
+}
+
+.navbar-custom .logo {
+	position: relative;
+	float: left;	
+	padding-top: 0;	
+	padding-bottom: 0;	
+	color: #fff;
+	font-size: 30px;
+	line-height: 23px;
+	font-weight: 700;
+}
+
+
+.menu-btn-open {
+	position: absolute;
+	right: 0px;
+	display: block;
+	width: 24px;
+	height: 16px;
+	line-height: 1px;
+	margin: 4px 0 0 0;
+	color: #fff !important;
+}
+
+.menu-btn-open span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	color: inherit;
+	border: 1px solid;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.menu-btn-open .line1 {
+	top: 0;
+}
+
+.menu-btn-open .line2 {
+	top: 7px;
+}
+
+.menu-btn-open .line3 {
+	bottom: 0;
+}
+
+
+.menu-btn-close {
+	position: absolute;
+	right: 0px;
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 4px 0 0 0;
+	top: 23px;
+	color: #fff !important;
+}
+
+.menu-btn-close span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	top: 40%;
+	color: inherit;
+	border: 1px solid;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.menu-btn-close .line1 {
+	transform: translateY(-6px);
+}
+
+.menu-btn-close .line2 {
+	transform: translateY(6px);
+}
+
+.menu-btn-close.loaded .line1 {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.menu-btn-close.loaded .line2 {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.menu-lightbox {
+	position: fixed;
+	top: 0%;
+	right: 0;
+	left: 0%;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 9998;
+	color: #fff;
+	display: none;
+}
+
+.menu-lightbox .menu-nav {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	list-style: none;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+.menu-lightbox .menu-nav li {
+	padding: 0 0 0px 0;
+	margin: 0 0 21px 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.menu-lightbox .menu-nav li a {
+	color: #fff;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	position: relative;
+	display: inline-block;
+	/*	padding-right: 30px;*/
+	opacity: 0;
+	transform: translate(0, 30px);
+	-webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+	transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.menu-lightbox .menu-nav li a:hover {
+	color: #a8a8ff;
+}
+
+.menu-lightbox.active .menu-nav li a {
+	opacity: 1;
+	transform: translate(0, 0px);
+}
+.navbar-custom {
+	margin-top: 0px;
+	padding: 15px 0px !important;
+	background-color: #000;
+}
+
+
+
+
+/*=================================
+3. Home secion css start
+===================================*/
+
+.bg-home {
+	position: relative;
+	padding: 103px 0px 97px;
+	background: #1488CC;
+	background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+	background: linear-gradient(to right, #2B32B2, #1488CC);
+}
+
+.home-title {
+	font-size: 50px;
+	text-transform: capitalize;
+	max-width: 695px;
+	line-height: 1.4;
+	font-weight: 300;
+}
+
+#home .owl-controls {
+	margin-top: 15px!important;
+	height: 18px;
+}
+
+.home-subtitle {
+	max-width: 600px;
+	color: #dadadc;
+	opacity: 0.6;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.social-icons li a {
+	font-size: 18px;
+	color: #ffffff;
+	padding-right: 20px;
+}
+
+
+
+/*======================================
+4. Sarvice Section css Start
+========================================*/
+
+.bg-services {
+	position: relative;
+	padding: 94px 0px 82px;
+	background: #FC466B;
+	background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);
+	background: linear-gradient(to left, #3F5EFB, #FC466B);
+}
+
+.services-desc h4 {
+	font-size: 20px;
+}
+
+#howitwork .service-box {
+	z-index: 99999999;
+	border-radius: 5px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#howitwork h2{
+	margin-bottom: 25px;
+}
+#howitwork .tsectionTagLine {
+	margin-bottom: 30px;
+}
+
+
+
+.services-desc p {
+	font-size: 15px;
+}
+
+
+.services-icon span {
+	font-size: 32px;
+	border: 2px solid #fff;
+	height: 75px;
+	display: inline-block;
+	width: 75px;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 73px;
+	margin-bottom: 10px;
+	position: relative;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.service-box:hover {
+	cursor: pointer;
+}
+
+#howitwork .service-box:hover .services-icon span::after {
+	position: absolute;
+	content: "";
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	left: -7px;
+	top: -7px;
+	box-shadow: 0px 0px 7px 6px rgba(255, 255, 255, 0.75);
+	animation: anione 1s linear infinite;
+}
+
+@keyframes anione {
+	0% {
+		width: 75px;
+		height: 75px;
+		border-radius: 50%;
+		left: -2px;
+		top: -2px;
+		opacity: 1;
+
+	}
+	50% {
+		width: 85px;
+		height: 85px;
+		border-radius: 50%;
+		left: -7px;
+		top: -7px;
+		opacity: 1;
+
+	}
+	100% {
+		width: 95px;
+		height: 95px;
+		border-radius: 50%;
+		left: -12px;
+		top: -12px;
+		opacity: 0;
+
+	}
+
+}
+
+
+/*==============================
+5. Features Section css Start
+=================================*/
+
+#features .title p {
+	margin-bottom: 46px;
+	margin-top: 18px;
+}
+
+.bg-features {
+	position: relative;
+	padding: 94px 0px 100px;
+	background: #e53935;
+	background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+	background: linear-gradient(to right, #e35d5b, #e53935);
+}
+
+
+.features-box .features-icon {
+	font-size: 40px;
+	color: #fff;
+}
+
+.features-box {
+	margin-top: 20px;
+	text-align: center;
+	padding: 15px;
+}
+
+.features-box .features-content {
+	margin-top: 15px;
+}
+
+.features-box .features-content h5 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.features-box .features-content p {
+	font-size: 15px;
+	line-height: 24px;
+	margin-top: 12px;
+	letter-spacing: 0.6px;
+}
+
+.features-box {
+	border-radius: 5px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.features-icon span {
+	font-size: 32px;
+	border: 2px solid #fff;
+	height: 75px;
+	display: inline-block;
+	width: 75px;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 73px;
+	margin-bottom: 10px;
+	position: relative;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+
+.features-box:hover .features-icon span::after {
+	position: absolute;
+	content: "";
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	left: -7px;
+	top: -7px;
+	box-shadow: 0px 0px 7px 6px rgba(255, 255, 255, 0.75);
+	animation: anione 1s linear infinite;
+}
+
+
+/*==================================
+6. Video Section css Start
+===================================*/
+#video .title p {
+	margin-bottom: 46px;
+	margin-top: 10px;
+}
+.bg-video {
+	position: relative;
+	padding: 92px 0px 100px;
+	height: 100%;	background: #DC2424;
+	background: -webkit-linear-gradient(to left, #4A569D, #DC2424);
+	background: linear-gradient(to left, #4A569D, #DC2424);
+}
+
+
+.video-play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -30px;
+	outline: none !important;
+	font-size: 32px;
+	border: 2px solid #fff;
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.video-play-icon i {
+	color: white;
+	font-size: 20px;
+	line-height: 73px;
+}
+
+.video-play-icon::after {
+	position: absolute;
+	content: "";
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	left: -7px;
+	top: -7px;
+	box-shadow: 0px 0px 7px 6px rgba(255, 255, 255, 0.8);
+	animation: anione 1s linear infinite;
+}
+
+.video-play-icon:hover::after {
+	animation: none;
+	height: 75px;
+	width: 75px;
+	box-shadow: none;
+}
+
+/*====================================
+7. ScreenShort Section css Start
+======================================*/
+
+.bg-screenshot {
+	position: relative;
+	padding: 92px 0px 60px;
+	background: #0575E6;
+	background: -webkit-linear-gradient(to left, #021B79, #0575E6);
+	background: linear-gradient(to left, #021B79, #0575E6);
+}
+
+#screenshot {
+	margin: 0;
+	width: 100%;
+}
+#screenshot .title p {
+	margin: 17px 0px 42px;
+}
+.screenshot-area {
+	padding: 93px 0px 75px;
+}
+
+.screenshot-area .swiper-container,
+.screenshot-area .swiper-container2 {
+  padding: 29px;
+}
+
+.screenshot-img {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+}
+.screenshot-3 .screenshot-img{
+	box-shadow: inherit;
+}
+.slide-screen-2 {
+  padding: 83px 0;
+}
+.owl-controls {
+	margin-top: 26px !important;
+}
+.screenshot-item {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 290px;
+	overflow: hidden;
+	position: relative;
+}
+
+.owl-screenshot {
+	padding-top: 40px;
+}
+
+.screenshot-content {
+	width: 100%;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.screenshot-content img {
+	width: 100%;
+}
+
+.screenshot-overlayer {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+	position: absolute;
+	background-color: transparent;
+}
+
+.screenshot-overlayer a {
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 5px 4px;
+	filter: Alpha(Opacity=50);
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	transition: all 0.5s;
+	background: #fff;
+}
+
+/*====================================
+8. Pricing Section css Start
+======================================*/
+#pricing .title p {
+	margin: 25px 0px 30px;
+}
+.bg-pricing {
+	position: relative;
+	padding: 94px 0px 100px;
+	background: #6441A5;
+	background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+	background: linear-gradient(to right, #2a0845, #6441A5);
+}
+
+.bg-price {
+	background-color: rgba(255, 255, 255, 0.12);
+	padding: 35px 20px;
+}
+
+.price-active {
+	position: relative;
+	overflow: hidden;
+}
+
+.plan-price sub {
+	font-size: 17px;
+	bottom: -0.0em;
+}
+
+.plan-price sup {
+	font-size: 20px;
+	top: -0.8em;
+}
+
+.lable {
+	background: #40556E none repeat scroll 0 0;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	right: -26px;
+	padding: 2px 25px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 20px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+}
+
+
+/*==============================
+9. Clint Review Section css Start
+================================*/
+#client .title p {
+	margin: 25px 0px 34px;
+}
+.bg-client {
+	position: relative;
+	padding: 94px 0px 88px;
+	background: #c0392b;
+	background: -webkit-linear-gradient(to left, #8e44ad, #c0392b);
+	background: linear-gradient(to left, #8e44ad, #c0392b);
+}
+
+#owl-demo .owl-item div {
+	padding: 5px;
+}
+
+#owl-demo .owl-item img {
+	width: 100%;
+	height: auto;
+}
+
+.testi-user {
+	width: 85px !important;
+	margin-right: 15px;
+	color: #A2A2A2;
+	margin-top: 20px;
+}
+
+.user-review {
+	font-size: 16px;
+	line-height: 30px;
+	font-style: italic;
+	font-weight: 300;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testi-user-name {
+	font-size: 16px;
+}
+
+.review-box {
+	padding: 20px;
+}
+
+
+/*============================
+10. Download Section css Start
+=============================*/
+
+.bg-download {
+	position: relative;
+	padding: 94px 0px 102px;
+	margin-bottom: -1px;
+	background: #536976;
+	background: -webkit-linear-gradient(to right, #292E49, #536976);
+	background: linear-gradient(to right, #292E49, #536976);
+}
+.downloadButtons {
+	margin-top: 34px;
+}
+#download .title p {
+	margin: 25px 0px 22px;
+}
+
+/*===================================
+11. FAQ Section css Start
+====================================*/
+#faq .title p {
+	margin: 24px 0px 45px;
+}
+.bg-faq {
+	position: relative;
+	padding: 93px 0px 70px;
+	background: #41295a;
+	background: -webkit-linear-gradient(to bottom, #2F0743, #41295a);
+	background: linear-gradient(to bottom, #2F0743, #41295a);
+}
+
+.faq {
+	position: relative;
+}
+
+.faq-title {
+	font-size: 16px;
+	color: #fff;
+}
+
+.faq-sub-title {
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+}
+
+.service-icon {
+	float: left;
+}
+
+.service-icon {
+	font-size: 40px;
+	position: absolute;
+	color: #fff;
+	top: 45%;
+	transform: translateY(-50%);
+}
+
+.faq-ans {
+	margin-left: 10%;
+}
+
+.faq-side .card {
+	margin-bottom: 30px;
+	background: transparent;
+	color: white;
+}
+
+.faq-side .card-header {
+	border: none;
+	color: #10c469;
+	cursor: pointer;
+	padding: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.faq-side .card-header:hover h3 button {
+	color: white;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+}
+
+.faq-side .card-body {
+	background: transparent;
+	border: none;
+	color: #10c469;
+	border-left: 2px solid #10c469;
+	border-right: 2px solid #10c469;
+	border-bottom: 2px solid #10c469;
+	font-size: 18px;
+}
+
+.faq-side .btn-link {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 0% 100%;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	border: 2px solid #10c469;
+	color: #10c469;
+	border-radius: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.faq-side .btn-link:hover {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 100% 100%;
+}
+
+.faq-side .btn-link[aria-expanded=true] {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+.faq-side .btn-link[aria-expanded=true]:focus {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+.faq-side .btn-link[aria-expanded=false]:focus {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+.faq-side .btn-link i {
+	margin-top: 1%;
+	transform: rotate(0deg);
+	float: right;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+position: absolute;
+right: 15px;
+}
+
+.faq-side .btn-link[aria-expanded=true] i {
+	transform: rotate(180deg);
+}
+
+.faq-side .btn-link .faq-side .btn-link.collapsed {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 0% 100%;
+	text-decoration: none;
+	color: #10c469;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	text-align: left;
+	cursor: pointer;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.faq-side .btn-link:hover {
+	background: linear-gradient(to right, #10c469, #10c469) no-repeat;
+	background-size: 100% 100%;
+	text-decoration: none;
+	color: white;
+}
+
+/*==================================
+12. Contact Section css Start
+====================================*/
+#contact .title p {
+	margin: 18px 0px 22px;
+}
+.bg-contact {
+	position: relative;
+	padding: 92px 0px 98px;
+	background: #0f0c29;
+	background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);
+	background: linear-gradient(to left, #24243e, #302b63, #0f0c29);
+}
+
+.form-custom .form-control {
+	height: 50px;
+	border-color: #cecece;
+	background-color: transparent;
+	border-radius: 0px;
+	color: #fff;
+}
+
+.form-custom .form-control:focus {
+	box-shadow: none;
+}
+
+.form-custom .form-group {
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.form-custom textarea.form-control {
+	height: auto;
+}
+
+.social-links {
+	margin-top: 30px
+}
+
+.social-links li {
+	list-style: none;
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+.social-links li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border: 2px solid;
+	border-radius: 5px;
+	transition: all .4s;
+}
+
+.social-links li a:hover {
+	background-size: 100% 100%;
+
+}
+
+
+.social-links li a.fb {
+	border-color: #3b5998;
+	color: #3b5998;
+	background: -webkit-linear-gradient(to top, #3b5998, #3b5998);
+	background: linear-gradient(to top, #3b5998, #3b5998) no-repeat;
+	background-size: 0% 100%;
+}
+
+.social-links li a.fb:hover {
+	color: white;
+	background-size: 100% 100%;
+
+}
+
+.social-links li a.tw {
+	border-color: #00aced;
+	color: #00aced;
+	background: -webkit-linear-gradient(to top, #00aced, #00aced);
+	background: linear-gradient(to top, #00aced, #00aced) no-repeat;
+	background-size: 0% 100%;
+}
+
+.social-links li a.tw:hover {
+	color: white;
+	background-size: 100% 100%;
+
+}
+
+.social-links li a.in {
+	border-color: #007bb6;
+	color: #007bb6;
+	background: -webkit-linear-gradient(to top, #007bb6, #007bb6);
+	background: linear-gradient(to top, #007bb6, #007bb6) no-repeat;
+	background-size: 0% 100%;
+}
+
+.social-links li a.in:hover {
+	color: white;
+	background-size: 100% 100%;
+
+}
+
+.social-links li a.yt {
+	border-color: #bb0000;
+	color: #bb0000;
+	background: -webkit-linear-gradient(to top, #bb0000, #bb0000);
+	background: linear-gradient(to top, #bb0000, #bb0000) no-repeat;
+	background-size: 0% 100%;
+}
+
+.social-links li a.yt:hover {
+	color: white;
+	background-size: 100% 100%;
+
+}
+
+iframe {
+	filter: grayscale(100%);
+}
+
+.map {
+	margin-top: 50px;
+}
+/* =====================================
+13. Go-top css Start
+======================================== */
+
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 38px;
+	background: #333399;
+	color: #fff;
+	cursor: pointer;
+	border: 0;
+	border-radius: 2px;
+	text-decoration: none;
+	transition: opacity 0.2s ease-out;
+	opacity: 0;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+	border: 1px solid #333399;
+	background: #f3f3f3;
+	color: #333399;
+}
+
+#back-to-top.show {
+	opacity: 1;
+}
+/*============================
+14. preloader part css start
+===============================*/
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999999;
+	background: #fafafa;
+	height: 100%;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0 0 -45px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #9fa8da;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+#loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #1a237e;
+	-webkit-animation: spin 3s linear infinite;
+	animation: spin 3s linear infinite;
+}
+
+#loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #5c6bc0;
+	-webkit-animation: spin 1.5s linear infinite;
+	animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+	}
+	100% {
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+	}
+	100% {
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+	}
+}
+.form-control:focus {
+	box-shadow: 0 0 0 .0rem rgba(0,123,255,.0)!important;
+}
+
+
+

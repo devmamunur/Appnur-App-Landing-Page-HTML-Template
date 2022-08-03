@@ -1,0 +1,38 @@
+@media (min-width: 200px) and (max-width: 767px) {
+
+	.nav-position {
+		width: 85%;
+	}
+	.vertical-content {
+		display: inherit;
+	}
+	.home-title {
+		font-size: 32px;
+	}
+	.home-subtitle {
+		line-height: 26px;
+	}
+	.faq-ans {
+		margin-left: 15%;
+	}
+	.menu-btn-close {
+		top: 15px;
+	}
+}
+
+
+@media  (max-width: 991px){
+	.social-links {
+		padding-left: 0px;
+	}
+	.bg-home {
+    padding: 135px 0px 98px;
+}
+
+}
+@media  (max-width: 350px){
+	.social-links li {
+    margin: 0px 5px;
+}
+
+}
